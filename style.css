@@ -4,9 +4,10 @@
     left: 0;
     width: 100%;
     background-color: aqua;
+    padding: 8px 16px;
 }
 
-.yt-searchbar input[type=text]{
+.top-nav input[type=text]{
     font-size: 16px;
     font-family: 'Roboto','Noto',sans-serif;
     line-height: 24px;
