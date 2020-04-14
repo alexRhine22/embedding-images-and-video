@@ -1,3 +1,6 @@
+body {
+    padding-top: 20px;
+}
 .top-nav {
     position: fixed;
     top: 0;
@@ -7,6 +10,7 @@
     padding: 8px 16px;
     display: inline-block;
     font-family: 'Roboto';
+    background-color: green;
 }
 
 .top-nav input[type=text]{
@@ -25,7 +29,9 @@
     outline: none;
     font-size: 16px;
     cursor: pointer;
-    border: none;
+    border: .75px solid rgb(168, 167, 167);
+    padding: 5px;
+    margin-left: -4px;
 }
 
 .top-nav input[type=button]:hover {
@@ -40,8 +46,20 @@
     cursor: pointer;
 }
 
+.yt-video {
+    width: 912px;
+    height: 512px;
+    border: 0;
+}
+
+.yt-main-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
 .main {
     padding: 16px;
     margin-top: 30px;
     height: 1500px; /* Used in this example to enable scrolling */
-  }
+}
