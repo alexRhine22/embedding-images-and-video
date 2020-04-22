@@ -1,6 +1,25 @@
 body {
     padding-top: 20px;
 }
+
+/* aside */
+.aside { grid-area: right;} 
+.main { grid-area: main;}
+.top-nav { grid-area: header;}
+
+.grid-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header'
+    'main main right right right right right';
+    /* 'menu footer footer footer footer footer'; */
+
+}
+
+/***********************************************************
+ .top-nav  */
+
 .top-nav {
     position: fixed;
     top: 0;
@@ -8,9 +27,11 @@ body {
     width: 100%;
     background-color: white;
     padding: 8px 16px;
-    display: inline-block;
+    display: flex;
     font-family: 'Roboto';
     background-color: green;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
 .top-nav input[type=text]{
@@ -25,7 +46,6 @@ body {
 }
 
 .top-nav input[type=button] {
-    /*  */
     outline: none;
     font-size: 16px;
     cursor: pointer;
@@ -36,16 +56,17 @@ body {
 
 .top-nav input[type=button]:hover {
     background-color: rgb(233, 232, 232);
-    /* border: 2px solid; */
 }
 
-.top-nav img {
-    width: 10%;
-    height: auto;
-    vertical-align: middle;
+
+.top-nav a img {
+    width: 90px;
+    /* vertical-align: middle; */
     cursor: pointer;
 }
 
+/***********************************************************
+ embedded video  */
 .yt-video {
     width: 912px;
     height: 512px;
@@ -59,7 +80,11 @@ body {
 }
 
 .main {
-    padding: 16px;
-    margin-top: 30px;
+    padding: 35px 0 0 80px;
     height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.aside {
+    margin: 0;
+    padding: 35px 0 0 0;
 }
