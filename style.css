@@ -1,94 +1,30 @@
+:root {
+  --red: #cc0000;
+  --icon-color: #606060;
+}
+
+/**
+ *
+ * Globals
+ *
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 body {
-  padding-top: 20px;
-}
-
-/* aside */
-.aside {
-  grid-area: right;
-}
-.main {
-  grid-area: main;
-}
-.top-nav {
-  grid-area: header;
-}
-
-.grid-container {
-  margin-top: 30px;
-  display: grid;
-  grid-template-areas:
-    "header header header header header header header"
-    "main main right right right right right";
-  /* 'menu footer footer footer footer footer'; */
-}
-
-/***********************************************************
- .top-nav  */
-
-.top-nav {
-  background-color: green;
-  background-color: white;
-  display: flex;
-  font-family: "Roboto";
-  left: 0;
-  padding: 8px 16px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  align-items: center;
-  /* justify-content: space-between; */
-}
-
-.top-nav input[type="text"] {
-  font-size: 16px;
-  line-height: 24px;
-  outline: none;
-  padding-left: 4px;
-}
-
-.top-nav input[type="text"]:focus {
-  border: 2px solid blue;
-}
-
-.top-nav input[type="button"] {
-  border: 1px solid rgb(168, 167, 167);
-  cursor: pointer;
-  font-size: 16px;
-  margin-left: -4px;
-  outline: none;
-  padding: 2px 8px;
-}
-
-.top-nav input[type="button"]:hover {
-  background-color: rgb(233, 232, 232);
-}
-
-.top-nav a img {
-  width: 90px;
-  /* vertical-align: middle; */
-  cursor: pointer;
-}
-
-/***********************************************************
- embedded video  */
-.yt-video {
-  border: 0;
-  height: 512px;
-  width: 912px;
-}
-
-.yt-main-title {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 2.4rem;
-}
-
-.main {
-  height: 1500px; /* Used in this example to enable scrolling */
-  padding: 35px 0 0 80px;
-}
-
-.aside {
   margin: 0;
-  padding: 35px 0 0 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  width: auto;
 }
